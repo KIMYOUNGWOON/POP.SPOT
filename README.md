@@ -75,7 +75,7 @@
 
 ## 1. 메인페이지
 
-<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/123b714d-f83a-4e02-a3ef-5a74be34c542" width="800">
+<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/105bf42d-09bd-4b92-821a-207b29860a98" width="800">
 
 
 - 회원 정보 입력 : 일반회원 가입의 경우 추가 항목이 있습니다. (생년월일 / 운전자면허증 번호)
