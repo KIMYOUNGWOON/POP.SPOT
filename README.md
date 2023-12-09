@@ -38,36 +38,31 @@
 ## 📍사용 기술
 
 - **FrontEnd** <br>
-  Next.js <br>
-  React <br>
-  SCSS <br>
-  Prettier <br>
-  Eslint <br>
-  AWS s3 <br>
+  Next.js / React / SCSS / Prettier / Eslint / AWS s3
+  
   <br>
 
 - **BackEnd** <br>
-  Node.js <br>
-  express.js <br>
-  MongoDB <br>
-  Mongoose <br>
-  Amazon S3 <br>
-  PM2 <br>
-  Nginx <br>
+  Node.js / express.js / MongoDB / Mongoose / Amazon S3 / PM2 / Nginx <br>
 
   <br>
 
 - **협업** <br>
-  Git & Git lab <br>
-  Figma <br>
-  Postman <br>
-  Gather <br>
-  Notion <br>
+  Git & Git lab / Figma / Postman / Gather / Notion <br>
+  
   <br>
 
-## 📍내가 맡은 구현 페이지 및 기능
+## 📍 내가 맡은 구현 페이지 및 기능
 
-## 내가 구현한 UI <br><br>
+• 내가 구현한 UI <br><br>
+
+1. 메인 페이지
+2. 헤더
+3. 팝업 리스트 페이지
+4. 검색 모달창
+5. 필터 모달창
+
+• 내가 구현한 기능 <br><br>
 
 1. 메인 페이지
 2. 헤더
@@ -75,13 +70,7 @@
 4. 검색 모달창
 5. 필터 모달창
 
-## 내가 구현한 기능 <br><br>
-
-1. 메인 페이지
-2. 헤더
-3. 팝업 리스트 페이지
-4. 검색 모달창
-5. 필터 모달창
+<br>
 
 ### 1. 회원가입
 
