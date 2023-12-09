@@ -79,7 +79,7 @@
 
 <img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/105bf42d-09bd-4b92-821a-207b29860a98" width="800">
 
-<br>
+<br><br>
 
 메인 페이지에서 다양한 컨텐츠를 보여줌으로써 사용자들에게 더욱 효과적으로 팝업스토어에 참여하도록 유도했습니다. <br>
 
