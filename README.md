@@ -72,9 +72,15 @@
 
 <br>
 
+<style>
+  body {
+    text-align: center;
+  }
+</style>
+
 ## 1. 메인페이지
 
-<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/61c0af0b-4202-475d-a764-19dd6c737dc2" width="700" style="textAlign: center">
+<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/61c0af0b-4202-475d-a764-19dd6c737dc2" width="700">
 ![메인페이지 UI](https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/61c0af0b-4202-475d-a764-19dd6c737dc2)
 
 - 회원 유형 : 일반회원 / 공급회원
