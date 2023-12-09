@@ -1,0 +1,78 @@
+@mixin arrow {
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+.EndSoon {
+  margin-bottom: 150px;
+
+  .headerWrapper {
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+
+    .title {
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    .btnWrapper {
+      display: flex;
+      gap: 16px;
+
+      .leftArrowIcon {
+        @include arrow;
+      }
+
+      .rightArrowIcon {
+        @include arrow;
+      }
+    }
+  }
+
+  .popUpListWrapper {
+    padding-left: 50px;
+    overflow: hidden;
+
+    .slideWrapper {
+      display: flex;
+      justify-content: flex-start;
+      transition: 0.8s;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .EndSoon {
+    .headerWrapper {
+      padding: 0 30px;
+
+      .title {
+        font-size: 20px;
+      }
+
+      .btnWrapper {
+        .leftArrowIcon {
+          font-size: 30px;
+        }
+
+        .rightArrowIcon {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .popUpListWrapper {
+      padding-left: 10px;
+    }
+  }
+}

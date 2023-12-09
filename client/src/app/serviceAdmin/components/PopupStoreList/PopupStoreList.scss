@@ -1,0 +1,7 @@
+@import "../../main.scss";
+
+.action__menu {
+  .create-store-btn {
+    @include admin-button-base-style(#0095ff, white);
+  }
+}

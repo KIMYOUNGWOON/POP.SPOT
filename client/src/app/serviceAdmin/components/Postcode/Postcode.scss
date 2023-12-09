@@ -1,0 +1,6 @@
+@import "../../main.scss";
+
+.btn-postcode-popup {
+  @include admin-button-base-style(#0095ff, white);
+  min-width: 80px;
+}

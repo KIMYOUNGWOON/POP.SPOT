@@ -1,0 +1,171 @@
+.footer {
+  position: relative;
+  padding: 50px;
+  background-color: #000;
+  color: #fff;
+
+  .topWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #fff;
+
+    .serviceWrapper {
+      display: flex;
+      gap: 100px;
+      order: 0;
+
+      .useGuideWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .useGuideTitle {
+          margin-bottom: 10px;
+          font-size: 18px;
+          font-weight: 700;
+        }
+
+        .useGuideItem {
+          font-size: 12px;
+        }
+      }
+      .supportWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .supportTitle {
+          margin-bottom: 10px;
+          font-size: 18px;
+          font-weight: 700;
+        }
+
+        .supportItem {
+          font-size: 12px;
+        }
+      }
+    }
+    .customerCenterWrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      order: 1;
+
+      .customerCenterNumber {
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .customerCenterItem {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .bottomWrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .flexStartWrapper {
+      .textLinkWrapper {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 30px;
+
+        .textLink {
+          font-size: 18px;
+          font-weight: 700;
+        }
+      }
+
+      .businessWrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+
+        .name {
+          font-size: 12px;
+        }
+
+        .registrationNumber {
+          font-size: 12px;
+        }
+
+        .businessType {
+          font-size: 12px;
+        }
+      }
+
+      .addressWrapper {
+        .businessAddress {
+          font-size: 12px;
+          margin-bottom: 10px;
+        }
+
+        .hosting {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .flexEndWrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .iconLinkWrapper {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+
+        .icon {
+          font-size: 26px;
+        }
+      }
+
+      .logo {
+        width: 200px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    .topWrapper {
+      display: block;
+
+      .customerCenterWrapper {
+        margin-bottom: 50px;
+      }
+    }
+
+    .bottomWrapper {
+      display: block;
+
+      .flexStartWrapper {
+        margin-bottom: 40px;
+
+        .textLinkWrapper {
+          flex-wrap: wrap;
+
+          .textLink {
+            font-size: 16px;
+          }
+        }
+
+        .businessWrapper {
+          flex-wrap: wrap;
+        }
+      }
+
+      .flexEndWrapper {
+        gap: 20px;
+      }
+    }
+  }
+}

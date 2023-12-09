@@ -1,0 +1,434 @@
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@mixin btnStyle {
+  padding: 10px 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  transition: 0.4s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+.popupStore {
+  display: flex;
+  justify-content: center;
+
+  .popupStoreWrapper {
+    display: flex;
+    gap: 16px;
+    width: 600px;
+
+    .modalBackground {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    .addInterestModal {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 500px;
+      height: 360px;
+      padding-top: 30px;
+      transform: translate(-50%, -50%);
+      border-radius: 12px;
+      background-color: #fff;
+      animation: visible 0.5s linear;
+      z-index: 1;
+
+      .smileIcon {
+        color: #0472ff;
+        font-size: 90px;
+        margin-bottom: 20px;
+      }
+
+      .interestModalMessage {
+        margin-bottom: 16px;
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 1.5;
+      }
+
+      .subText {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .modalBtnWrapper {
+        display: flex;
+        gap: 14px;
+
+        .listMoveBtn {
+          @include btnStyle;
+        }
+
+        .okBtn {
+          @include btnStyle;
+        }
+      }
+    }
+
+    .imageWrapper {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      flex-shrink: 0;
+
+      .popupStoreImg {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        background-position: center;
+        background-size: cover;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .heartIcon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #fff;
+        font-size: 26px;
+        z-index: 0;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .closeImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        inset: 0;
+        border-radius: 12px;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #fff;
+        font-size: 28px;
+        font-weight: 700;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .comingSoonImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        inset: 0;
+        border-radius: 12px;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #fff;
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .popupStoreInfoWrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .infoTop {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+        .popupStoreBrand {
+          color: #5d5d5d;
+          font-size: 14px;
+          font-weight: 600;
+        }
+
+        .popupStoreName {
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 8px;
+        }
+
+        .popupStoreAddress {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .addressIcon {
+            color: #000;
+          }
+
+          .addressText {
+            font-size: 14px;
+          }
+        }
+
+        .popupStorePeriod {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .periodIcon {
+            color: #000;
+          }
+
+          .periodText {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .infoBottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding-bottom: 10px;
+
+        .done {
+          padding: 6px 14px;
+          border-radius: 10px;
+          background-color: #fd021f;
+          color: #fff;
+          font-size: 12px;
+        }
+
+        .comingSoonWrapper {
+          display: flex;
+          gap: 10px;
+
+          .comingSoon {
+            padding: 6px 14px;
+            border-radius: 10px;
+            background-color: #0472ff;
+            color: #fff;
+            font-size: 12px;
+          }
+
+          .preBooking {
+            padding: 6px 14px;
+            border-radius: 10px;
+            background-color: #000;
+            color: #fff;
+            font-size: 12px;
+          }
+        }
+
+        .ongoingWrapper {
+          display: flex;
+          gap: 10px;
+
+          .ongoing {
+            padding: 6px 14px;
+            border-radius: 10px;
+            background-color: #0472ff;
+            color: #fff;
+            font-size: 12px;
+          }
+          .waiting {
+            padding: 6px 14px;
+            border-radius: 10px;
+            background-color: #000;
+            color: #fff;
+            font-size: 12px;
+          }
+        }
+
+        .readMore {
+          font-size: 14px;
+          &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .popupStore {
+    .popupStoreWrapper {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+
+      .imageWrapper {
+        position: relative;
+        width: 300px;
+        height: 300px;
+      }
+    }
+
+    .infoTop {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .popupStore {
+    .popupStoreWrapper {
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+
+      .imageWrapper {
+        position: relative;
+        width: 250px;
+        height: 250px;
+      }
+
+      .infoTop {
+        margin-bottom: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .popupStore {
+    .popupStoreWrapper {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+
+      .imageWrapper {
+        position: relative;
+        width: 200px;
+        height: 200px;
+      }
+
+      .infoTop {
+        margin-bottom: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .popupStore {
+    .popupStoreWrapper {
+      display: flex;
+      flex-direction: column;
+      width: 174px;
+
+      .imageWrapper {
+        position: relative;
+        width: 174px;
+        height: 174px;
+
+        .closeImage {
+          font-size: 20px;
+        }
+
+        .comingSoonImage {
+          font-size: 20px;
+        }
+
+        .heartIcon {
+          font-size: 20px;
+        }
+      }
+      .popupStoreInfoWrapper {
+        .infoTop {
+          margin-bottom: 18px;
+
+          .popupStoreBrand {
+            font-size: 12px;
+          }
+
+          .popupStoreName {
+            font-size: 14px;
+          }
+
+          .popupStoreAddress {
+            .addressIcon {
+              font-size: 12px;
+            }
+
+            .addressText {
+              font-size: 12px;
+            }
+          }
+
+          .popupStorePeriod {
+            .periodIcon {
+              font-size: 12px;
+            }
+
+            .periodText {
+              font-size: 12px;
+            }
+          }
+        }
+
+        .infoBottom {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+          padding-bottom: 10px;
+
+          .done {
+            padding: 6px 14px;
+            border-radius: 10px;
+            background-color: #fd021f;
+            color: #fff;
+            font-size: 12px;
+          }
+
+          .ongoing {
+            padding: 6px 14px;
+            border-radius: 10px;
+            background-color: #0472ff;
+            color: #fff;
+            font-size: 12px;
+          }
+
+          .comingSoon {
+            padding: 6px 14px;
+            border-radius: 10px;
+            background-color: #0472ff;
+            color: #fff;
+            font-size: 12px;
+          }
+
+          .readMore {
+            font-size: 14px;
+            &:hover {
+              cursor: pointer;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
