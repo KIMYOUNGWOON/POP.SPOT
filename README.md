@@ -73,8 +73,7 @@
 <br>
 
 ## 1. 메인페이지
-
-![Sign Up](https://user-images.githubusercontent.com/126956430/246651264-2970799f-697d-433f-835c-ffaff97732ff.gif)
+![메인페이지 UI](https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/61c0af0b-4202-475d-a764-19dd6c737dc2)
 
 - 회원 유형 : 일반회원 / 공급회원
 - 회원 정보 입력 : 일반회원 가입의 경우 추가 항목이 있습니다. (생년월일 / 운전자면허증 번호)
