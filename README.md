@@ -75,9 +75,9 @@
 
 ## 1. 메인페이지
 
-<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/61c0af0b-4202-475d-a764-19dd6c737dc2" width="800">
+<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/123b714d-f83a-4e02-a3ef-5a74be34c542" width="800">
 
-- 회원 유형 : 일반회원 / 공급회원
+
 - 회원 정보 입력 : 일반회원 가입의 경우 추가 항목이 있습니다. (생년월일 / 운전자면허증 번호)
   <br> - 라디오 버튼 체크시 회원 유형에 따라 하나의 컴포넌트에서 다른 UI가 그려지도록 구현함
 - 비밀번호 확인 : 비밀번호 확인 입력란을 추가하여 실시간으로 비밀번호를 일치 여부를 확인할 수 있습니다.
