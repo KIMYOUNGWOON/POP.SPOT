@@ -186,6 +186,12 @@
 
 <br>
 
+## 3. 팝업리스트 페이지
+
+<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/dc0bad3d-98c3-49c4-9020-89f9200309dc" width="800">
+
+
+
 
 
 
