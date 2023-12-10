@@ -196,7 +196,7 @@
 
 <img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/dd0bd1a1-6da8-4d5a-971e-622c43a95bd3" width="800">
 
-<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/51de889d-9391-4a1a-adbb-ea60860e7fb7" width="800">
+<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/51de889d-9391-4a1a-adbb-ea60860e7fb7" width="600">
 
 
 
