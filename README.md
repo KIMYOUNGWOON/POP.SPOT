@@ -192,8 +192,7 @@
 
 <br>
 
-<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/dc0bad3d-98c3-49c4-9020-89f9200309dc" width="800">
-
+<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/69e7b21f-4b03-41f2-a1f1-621272b08fc9" width="800">
 
 
 
