@@ -116,7 +116,7 @@
 
 <img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/4a07a3b1-89c1-4425-92ae-77d711b22ba3" width="800">
 
-<br>
+<br><br>
 
 1. 자동 롤링 배너 기능 <br>
 • 플렉스 박스 구성 : 리스트를 담은 플렉스 박스를 사용하여 롤링 배너 아이템을 가로로 배열했습니다. <br>
