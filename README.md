@@ -95,8 +95,10 @@
 
 ### 팝업스토어 리스트 관련 API 
 
-• 자동 롤링 배너 : 등록된 모든 팝업스토어를 불러오는 API 📌[코드 확인](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L4) <br>
-• 자동 롤링 배너 : 등록된 모든 팝업스토어를 불러오는 API 📌[코드 확인](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L4) <br>
+• 자동 롤링 배너 : 등록된 모든 팝업스토어 리스트를 불러오는 API 📌[코드 확인](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L4) <br>
+• 추천 팝업 : validateToken으로 유저를 검증하고 해당 유저 데이터에서 설정한 카테고리 정보를 가져와서 해당 카테고리의 팝업스토어 리스트를 불러오는 API 📌[코드 확인](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L42) <br>
+• 종료 직전 팝업 : 현재 날짜 기준 팝업스토어의 end_date가 5일 이하로 남은 팝업스토어 리스트를 불러오는 API 📌[코드 확인](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L23) <br>
+• 성수 팝업 : 주소가 성수이며 현재 진행중인 팝업스토어 리스트를 불러오는 API 📌[코드 확인](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L11) <br>
 
 <br>
 
