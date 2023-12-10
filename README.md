@@ -172,24 +172,21 @@
 
 <br>
 
-### 검색 기능 관련 API
+### 검색 기능에서 필요한 API
 
 1. 검색 API <br>
 • 역할 : 검색한 키워드에 해당하는 팝업스토어 리스트를 불러오는 API <br>
 • 구현 : 쿼리스트링으로 전달한 pageNumber, limit, keyword 값을 추출하여 브랜드, 팝업스토어 이름, 카테고리, 주소를 탐색하여 입력한 키워드가 포함된 팝업스토어 리스트를 가져옵니다. 이때 페이지네이션이 적용되어 페이지별로 8개씩만 데이터를 불러오도록 구현되었습니다. 또한, 검색된 전체 팝업스토어 갯수, 페이지네이션이 적용된 팝업 리스트, 토탈 페이지 수를 응답으로 전달합니다.📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L75) <br>
-2. 추천 팝업 API <br>
-• 역할 : validateToken으로 유저를 검증하고 해당 유저 데이터에서 설정한 카테고리 정보를 가져와서 해당 카테고리의 팝업스토어 리스트를 불러오는 API <br>
-• 구현 : 📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L42) <br>
-3. 종료 직전 팝업 API <br>
-• 역할 : 현재 날짜 기준 팝업스토어의 end_date가 5일 이하로 남은 팝업스토어 리스트를 불러오는 API <br>
-• 구현 : 📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L23) <br>
-4. 성수 팝업 API <br>
-• 역할 : 주소가 성수이며 현재 진행중인 팝업스토어 리스트를 불러오는 API <br>
-• 구현 : 📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L11) <br>
+2. 검색 키워드 저장 API  <br>
+• 역할 : 키워드 입력 후 검색 진행 시 해당 검색어를 DB에 저장하는 API <br>
+• 구현 : 사용자가 검색어를 입력하고 검색을 실행하면 해당 검색어를 DB의 검색 컬렉션에 저장합니다. 만약 이미 저장되어 있는 검색어일 경우에는 새로 저장하지 않고 해당 검색어의 카운트 필드의 숫자만 1씩 증가시킵니다.📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/searchService.js#L8) <br>
+3. 인기 검색어 API <br>
+• 역할 : 사용자들이 많이 검색한 키워드를 불러오는 API <br>
+• 구현 : 검색어들의 카운트 필드를 내림차순으로 정렬하여 검색 키워드 리스트를 응답으로 전달합니다. 상위 14개 키워드만 노출시킵니다.📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/searchService.js#L3) <br>
+
+<br>
 
 
-
-사용자가 검색어를 입력하고 검색을 실행하면 해당 검색어를 DB의 검색 컬렉션에 저장합니다. 만약 중복된 검색어 일 경우에는 새로 저장하지 않고 해당 검색어의 카운트를 증가시킵니다.
 
 
 
