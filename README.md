@@ -93,33 +93,47 @@
 
 각 섹션은 각각의 컴포넌트로 만들어 서버에서 섹션에 맞게 팝업스토어 리스트를 가져오도록 데이터 페칭이 이루어집니다. 이를 통해 실시간으로 업데이트되는 팝업스토어 정보를 사용자에게 효과적으로 전달하도록 구현했습니다.<br>
 
+<br>
+
 ### 메인페이지에서 필요한 API
 
 1. 자동 롤링 배너 API <br>
 • 역할 : 등록된 모든 팝업스토어 리스트를 불러오는 API <br>
-• 구현 : 📌[코드 확인](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L4) <br>
+• 구현 : 📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L4) <br>
 2. 추천 팝업 API <br>
 • 역할 : validateToken으로 유저를 검증하고 해당 유저 데이터에서 설정한 카테고리 정보를 가져와서 해당 카테고리의 팝업스토어 리스트를 불러오는 API <br>
-• 구현 : 📌[코드 확인](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L42) <br>
+• 구현 : 📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L42) <br>
 3. 종료 직전 팝업 API <br>
 • 역할 : 현재 날짜 기준 팝업스토어의 end_date가 5일 이하로 남은 팝업스토어 리스트를 불러오는 API <br>
-• 구현 : 📌[코드 확인](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L23) <br>
+• 구현 : 📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L23) <br>
 4. 성수 팝업 API <br>
 • 역할 : 주소가 성수이며 현재 진행중인 팝업스토어 리스트를 불러오는 API <br>
-• 구현 : 📌[코드 확인](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L11) <br>
+• 구현 : 📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L11) <br>
 
-<br>
+<br><br>
+
+### 메인페이지 간단 기능
 
 <img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/4a07a3b1-89c1-4425-92ae-77d711b22ba3" width="800">
 
 <br>
 
+1. 자동 롤링 배너 기능 <br>
+• 플렉스 박스 구성 : 리스트를 담은 플렉스 박스를 사용하여 롤링 배너 아이템을 가로로 배열했습니다. <br>
+• 카피본 생성 : 동일한 플렉스 박스의 카피본을 하나 더 생성했습니다. <br>
+• 이동 : @keyframes 규칙을 사용하여 이동 애니메이션을 정의하고 infinite로 설정하여 애니메이션이 무한으로 반복되도록 했습니다. <br>
+• 채우기 : 일정 주기마다 원본 플렉스 박스가 왼쪽으로 이동하면서 빈 공간이 발생하는데 이때 카피본이 왼쪽으로 이동하면서 원본 플렉스 박스의 빈 공간을 채워주도록 구현했습니다. <br>
 
-• 자동 롤링 배너 : 애니메이션과 함께 등록된 모든 팝업스토어를 한눈에 볼 수 있는 자동 롤링 배너를 구현하여 팝업스토어의 다양성과 특별함이 애니메이션으로 살아나 사용자들에게 눈에 띄게 전달했습니다.<br>
-• 추천 팝업 : 회원가입 시 설정한 관심 카테고리를 기반으로 한 사용자 맞춤형 팝업스토어를 제공합니다. 로그인 시, 취향에 맞는 팝업 리스트가 메인 페이지에 동적으로 표시되도록 구현했습니다.<br>
-• 종료 직전 팝업 : 현재 날짜를 기준으로 마감이 5일 이내로 남은 팝업스토어를 실시간으로 업데이트하여 사용자에게 제공합니다. 또한 남은 시간을 타이머로 시각적으로 표시하여, 소중한 경험을 놓치지 않도록 유도했습니다.<br>
-• 성수 팝업 : 팝업스토어의 성지인만큼 해당 구역에서만 만날 수 있는 팝업스토어들을 한눈에 볼 수 있는 섹션을 마련했습니다.<br>
+- 이렇게 함으로써 사용자는 웹 페이지를 로드할 때부터 자동으로 롤링 배너를 볼 수 있으며, 플렉스 박스와 카피본을 이용하여 부드러운 롤링 효과를 경험할 수 있습니다. 
 
+2. 캐로셀 기능 <br>
+• 두 가지 캐로셀 구현:
+- 한 칸씩 이동하는 캐로셀: 버튼을 클릭하면 캐로셀이 한 칸씩 오른쪽으로 이동합니다.
+- 전체가 넘어가는 캐로셀: 버튼을 클릭하면 캐로셀이 전체적으로 한 번에 이동합니다. 
+• 동적인 버튼 표시: 처음에는 오른쪽으로 넘기는 버튼만 표시되며, 한 번 이동하면 왼쪽으로 넘기는 버튼이 나타납니다. 그리고 캐로셀이 끝까지 이동하면 오른쪽으로 넘기는 버튼이 사라지도록 구현하여 더 이상 넘길 수 없다는 시각적인 피드백을 제공했습니다.
+
+
+<br>
 
 ## 2. 검색 모달창 
 
