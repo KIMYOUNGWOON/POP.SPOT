@@ -93,12 +93,20 @@
 
 각 섹션은 각각의 컴포넌트로 만들어 서버에서 섹션에 맞게 팝업스토어 리스트를 가져오도록 데이터 페칭이 이루어집니다. 이를 통해 실시간으로 업데이트되는 팝업스토어 정보를 사용자에게 효과적으로 전달하도록 구현했습니다.<br>
 
-### 팝업스토어 리스트 관련 API 
+### 메인페이지에서 필요한 API
 
-• 자동 롤링 배너 : 등록된 모든 팝업스토어 리스트를 불러오는 API 📌[코드 확인](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L4) <br>
-• 추천 팝업 : validateToken으로 유저를 검증하고 해당 유저 데이터에서 설정한 카테고리 정보를 가져와서 해당 카테고리의 팝업스토어 리스트를 불러오는 API 📌[코드 확인](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L42) <br>
-• 종료 직전 팝업 : 현재 날짜 기준 팝업스토어의 end_date가 5일 이하로 남은 팝업스토어 리스트를 불러오는 API 📌[코드 확인](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L23) <br>
-• 성수 팝업 : 주소가 성수이며 현재 진행중인 팝업스토어 리스트를 불러오는 API 📌[코드 확인](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L11) <br>
+1. 자동 롤링 배너 API <br>
+• 역할 : 등록된 모든 팝업스토어 리스트를 불러오는 API <br>
+• 구현 : 📌[코드 확인](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L4) <br>
+2. 추천 팝업 API <br>
+• 역할 : validateToken으로 유저를 검증하고 해당 유저 데이터에서 설정한 카테고리 정보를 가져와서 해당 카테고리의 팝업스토어 리스트를 불러오는 API <br>
+• 구현 : 📌[코드 확인](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L42) <br>
+3. 종료 직전 팝업 API <br>
+• 역할 : 현재 날짜 기준 팝업스토어의 end_date가 5일 이하로 남은 팝업스토어 리스트를 불러오는 API <br>
+• 구현 : 📌[코드 확인](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L23) <br>
+4. 성수 팝업 API <br>
+• 역할 : 주소가 성수이며 현재 진행중인 팝업스토어 리스트를 불러오는 API <br>
+• 구현 : 📌[코드 확인](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L11) <br>
 
 <br>
 
