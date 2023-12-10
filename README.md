@@ -80,7 +80,7 @@
 
 <br>
 
-<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/105bf42d-09bd-4b92-821a-207b29860a98" width="800">
+<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/105bf42d-09bd-4b92-821a-207b29860a98" width="600">
 
 <br><br>
 
@@ -118,7 +118,7 @@
 
 <br>
 
-<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/4a07a3b1-89c1-4425-92ae-77d711b22ba3" width="800">
+<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/4a07a3b1-89c1-4425-92ae-77d711b22ba3" width="600">
 
 <br><br>
 
@@ -147,7 +147,7 @@
 
 <br>
 
-<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/4b07b5d6-e0f7-4001-ac35-6d8c3ba63f8d" width="800">
+<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/4b07b5d6-e0f7-4001-ac35-6d8c3ba63f8d" width="600">
 
 <br><br>
 
@@ -192,9 +192,9 @@
 
 <br>
 
-<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/69e7b21f-4b03-41f2-a1f1-621272b08fc9" width="800">
+<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/69e7b21f-4b03-41f2-a1f1-621272b08fc9" width="600">
 
-<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/dd0bd1a1-6da8-4d5a-971e-622c43a95bd3" width="800">
+<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/dd0bd1a1-6da8-4d5a-971e-622c43a95bd3" width="600">
 
 <img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/51de889d-9391-4a1a-adbb-ea60860e7fb7" width="600">
 
