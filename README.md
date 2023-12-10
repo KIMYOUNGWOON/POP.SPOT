@@ -93,8 +93,9 @@
 
 각 섹션은 각각의 컴포넌트로 만들어 서버에서 섹션에 맞게 팝업스토어 리스트를 가져오도록 데이터 페칭이 이루어집니다. 이를 통해 실시간으로 업데이트되는 팝업스토어 정보를 사용자에게 효과적으로 전달하도록 구현했습니다.<br>
 
-각 세션의 API 
+### 팝업스토어 리스트 관련 API 
 
+• 자동 롤링 배너 : 등록된 모든 팝업스토어를 불러오는 API 📌[코드 확인](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L4) <br>
 • 자동 롤링 배너 : 등록된 모든 팝업스토어를 불러오는 API 📌[코드 확인](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L4) <br>
 
 <br>
