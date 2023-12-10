@@ -148,7 +148,7 @@
 
 <img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/4b07b5d6-e0f7-4001-ac35-6d8c3ba63f8d" width="800">
 
-<br>
+<br><br>
 
 더 나은 검색 경험을 위해서 아래와 같은 기능을 구현했습니다.
 
