@@ -194,7 +194,7 @@
 
 <img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/69e7b21f-4b03-41f2-a1f1-621272b08fc9" width="600">
 
-<br>
+<br><br>
 
 ### 팝업리스트 페이지 기능 구현
 
@@ -204,7 +204,7 @@
 
 <img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/dd0bd1a1-6da8-4d5a-971e-622c43a95bd3" width="600">
 
-<br>
+<br><br>
 
 • 초기 진입 : 사용자가 처음 팝업 리스트 페이지에 접근할 때, /popupList/all?pageNumber=1&limit=8과 같은 패스와 쿼리스트링이 포함된 URL로 로드되고 패스와 쿼리스트링 값을 가져와서 API 요청을 보냅니다. 서버는 해당 페이지네이션에 맞는 팝업 리스트(총 8개의 리스트를 불러옴)와 전체 페이지 수를 응답합니다.<br>
 • 동적 페이지 버튼 생성 : 받은 응답을 기반으로 팝업리스트 페이지 하단에는 페이지 수에 따라 동적으로 페이지 이동 버튼을 생성합니다. 예를 들어, 총 페이지 수가 5라면 1, 2, 3, 4, 5의 버튼이 생성됩니다.<br>
@@ -215,8 +215,9 @@
 
 ### 페이지네이션 API
 
-• 역할 : 검색한 키워드에 해당하는 팝업스토어 리스트를 불러오는 API <br>
-• 구현 :<br>
+• 역할 : 모든 팝업스토어 리스트를 한번에 불러오지 않고 페이지별로 쪼개서 불러오는 API <br>
+• 구현 : 쿼리스트링에서 pageNumber 및 limit 값을 추출하여 MongoDB에서 페이지네이션에 맞는 팝업 리스트 조회합니다. 이때 skip() 메소드를 이용해서 현재 페이지에서 몇개의 아이템을 건내뛰어야 하는지 계산합니다. 조회된 팝업스토어 리스트와 전체 페이지수를 함께 응답으로 반환합니다. 📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L54) <br>
+
 
 <br>
 
