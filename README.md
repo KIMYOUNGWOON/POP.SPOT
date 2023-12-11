@@ -194,9 +194,48 @@
 
 <img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/69e7b21f-4b03-41f2-a1f1-621272b08fc9" width="600">
 
+<br>
+
+### 팝업리스트 페이지 기능 구현
+
+<br>
+
 <img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/dd0bd1a1-6da8-4d5a-971e-622c43a95bd3" width="600">
 
+<br>
+
+1. 페이지네이션<br>
+• 초기 진입 : 사용자가 처음 팝업 리스트 페이지에 접근할 때, /popupList/all?pageNumber=1&limit=8과 같은 패스와 쿼리스트링이 포함된 URL로 로드되고 패스와 쿼리스트링 값을 가져와서 API 요청을 보냅니다. 서버는 해당 페이지네이션에 맞는 팝업 리스트(총 8개의 리스트를 불러옴)와 전체 페이지 수를 응답합니다.<br>
+• 동적 페이지 버튼 생성 : 받은 응답을 기반으로 팝업리스트 페이지 하단에는 페이지 수에 따라 동적으로 페이지 이동 버튼을 생성합니다. 예를 들어, 총 페이지 수가 5라면 1, 2, 3, 4, 5의 버튼이 생성됩니다.<br>
+• 페이지 이동 : 사용자가 페이지 버튼을 클릭하면 해당 페이지에 맞는 API 요청이 발생합니다. 예를 들어, 2페이지를 클릭하면 /popupList/all?pageNumber=2&limit=8으로 쿼리스트링이 변경되고, 이에 따라 서버에서는 새로운 팝업 리스트를 반환합니다.<br>
+• 동적 리스트 갱신 : 받은 새로운 팝업 리스트를 이용하여 화면에 표시될 리스트를 갱신합니다. 남은 리스트 개수가 현재 페이지의 limit보다 적은 경우, 남은 리스트만큼만 가져와서 표시합니다.<br>
+
+<br>
+
+### 페이지네이션 API
+
+• 역할 : 검색한 키워드에 해당하는 팝업스토어 리스트를 불러오는 API <br>
+• 구현 :<br>
+
+<br>
+
+
+
+<br>
+
+2. 운영상태 필터링
+
 <img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/51de889d-9391-4a1a-adbb-ea60860e7fb7" width="600">
+
+<br>
+
+3. 위시리스트
+
+<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/73621d70-60b8-4ee9-ac16-9a362dad3c79" width="600">
+
+<br>
+
+<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/73621d70-60b8-4ee9-ac16-9a362dad3c79" width="600">
 
 
 
