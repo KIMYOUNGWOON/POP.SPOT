@@ -273,13 +273,29 @@
 • 구현 : validateToken 미들웨어로 로그인 했는지 확인 후 통과되면 요청 바디에 담긴 팝업스토어 ID와 미들웨어에서 넘겨 받은 사용자 ID를 함께 MongoDB 위시리스트 컬렉션에 하나의 도큐먼트로 저장합니다. 📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/interestService.js#L10) <br>
 2. 관심 팝업스토어 삭제 API <br>
 • 역할 : 토글로 하트 아이콘을 클릭을 해제하면 위시리스트 컬렉션에 해당 팝업스토어를 삭제하는 API <br>
-• 구현 : 📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L42) <br>
+• 구현 : validateToken 미들웨어로 로그인 했는지 확인 후 통과되면 미들웨어에서 넘겨준 사용자 정보로 사용자 ID를 추출하고 패스파라미터로 전달 받은 팝업스토어 ID를 활용하여 위시리스트 컬렉션에서 해당 팝업스토어를 삭제합니다. 📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/interestService.js#L37) <br>
 3. 관심 팝업리스트 불러오는 API <br>
 • 역할 : 사용자가 저장한 관심 팝업리스트를 전부 불러오는 API  <br>
-• 구현 : 📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L23) <br>
-4. 추가한 팝업스토어인지 확인하는 API <br>
-• 역할 : 현재 날짜 기준 팝업스토어의 end_date가 5일 이하로 남은 팝업스토어 리스트를 불러오는 API <br>
-• 구현 : 📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L23) <br>
+• 구현 : validateToken 미들웨어에서 넘겨 받은 사용자 정보로 사용자 ID를 추출하여 해당 ID로 저장된 관심 팝업 리스트를 불러옵니다.📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/interestService.js#L20) <br>
+
+<br>
+
+## 4. 필터 모달창
+
+<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/7e1f011d-b5f9-4d13-b956-3d74b1ad3d02" width="600">
+
+<br><br>
+
+• 다양한 필터링 옵션 : 서울 구역, 카테고리, 방문 날짜 등 다양한 옵션을 활용하여 팝업스토어 리스트를 효과적으로 필터링하여 볼 수 있도록 구현했습니다. <br>
+• 중첩 필터링 : 구역, 카테고리, 방문일을 중첩해서 필터를 적용하여 더 세부적으로 원하는 팝업스토어를 찾을 수 있도록 구현했습니다. <br>
+• 직관적인 필터 UI :<br>
+  1. 서울 지도를 활용한 구역 선택 : 사용자가 원하는 지역을 직관적으로 선택할 수 있도록 구현했습니다. SVG 파일로 표현된 지도는 사용자에게 자세한 지리적 정보를 제공하며, 사용자가 원하는 위치에 쉽게 접근할 수 있습니다.<br>
+  2. 카테고리 선택 : 다양한 카테고리가 제공되며, 각 카테고리에 해당하는 이미지를 함께 보여주어 좀 더 시각적으로 잘 이해하고 구분할 수 있도록 구현했습니다.<br>
+  3. 방문일 선택 : 날짜 선택을 편리하게 하기 위해 달력 형태의 UI를 도입하여 사용자가 원하는 날짜를 직관적으로 선택할 수 있도록 구현했습니다.<br>
+
+
+
+
 
 
 
