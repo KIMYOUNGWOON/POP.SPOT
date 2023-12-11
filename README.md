@@ -100,7 +100,7 @@
 • 역할 : 등록된 모든 팝업스토어 리스트를 불러오는 API <br>
 • 구현 : 📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L4) <br>
 2. 추천 팝업 API <br>
-• 역할 : validateToken으로 유저를 검증하고 해당 유저 데이터에서 설정한 카테고리 정보를 가져와서 해당 카테고리의 팝업스토어 리스트를 불러오는 API <br>
+• 역할 : validateToken 미들웨어로 유저를 검증하고 해당 유저 데이터에서 설정한 카테고리 정보를 가져와서 해당 카테고리의 팝업스토어 리스트를 불러오는 API <br>
 • 구현 : 📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L42) <br>
 3. 종료 직전 팝업 API <br>
 • 역할 : 현재 날짜 기준 팝업스토어의 end_date가 5일 이하로 남은 팝업스토어 리스트를 불러오는 API <br>
@@ -252,14 +252,34 @@
 
 <img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/73621d70-60b8-4ee9-ac16-9a362dad3c79" width="600">
 
-<br>
+<br><br>
 
-• 위시리스트 추가 및 삭제 : 하트 아이콘을 클릭하여 팝업스토어를 위시리스트에 추가할 수 있으며, 토글로 하트 아이콘 클릭을 해제하면 추가된 팝업스토어를 다시 위시리스트에서 삭제할 수 있도록 구현했습니다.
-• 로그인 알림 및 이동 : 사용자 경험을 향상시키기 위해 로그인하지 않은 상태에서 하트 아이콘 클릭 시, 로그인이 필요하다는 알림과 함께 사용자를 로그인 페이지로 자동으로 이동시키게끔 구현했습니다.
+• 위시리스트 추가 및 삭제 : 하트 아이콘을 클릭하여 팝업스토어를 위시리스트에 추가할 수 있으며, 토글로 하트 아이콘 클릭을 해제하면 추가된 팝업스토어를 다시 위시리스트에서 삭제할 수 있도록 구현했습니다. <br>
+• 로그인 알림 및 이동 : 사용자 경험을 향상시키기 위해 로그인하지 않은 상태에서 하트 아이콘 클릭 시, 로그인이 필요하다는 알림과 함께 사용자를 로그인 페이지로 자동으로 이동시키게끔 구현했습니다. <br>
+
+<br><br>
 
 <img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/d44694da-97e7-4d74-829f-7c5288ab4031" width="600">
 
+• 상태 유지 : 추가한 팝업스토어는 새로고침이나 페이지 이동 후에도 하트가 클릭된 상태로 유지되도록 구현했습니다. <br>
+• 관심 팝업리스트 확인 : 마이페이지 관심팝업 탭에서 사용자가 위시리스트에 추가한 팝업스토어 리스트를 확인할 수 있습니다. <br>
 
+<br>
+ 
+### 위시리스트 API
+
+1. 관심 팝업스토어 저장 API <br>
+• 역할 : 하트 아이콘을 누르면 위시리스트 컬렉션에 해당 팝업스토어를 저장하는 API <br>
+• 구현 : validateToken 미들웨어로 로그인 했는지 확인 후 통과되면 요청 바디에 담긴 팝업스토어 ID와 미들웨어에서 넘겨 받은 사용자 ID를 함께 MongoDB 위시리스트 컬렉션에 하나의 도큐먼트로 저장합니다. 📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/interestService.js#L10) <br>
+2. 관심 팝업스토어 삭제 API <br>
+• 역할 : 토글로 하트 아이콘을 클릭을 해제하면 위시리스트 컬렉션에 해당 팝업스토어를 삭제하는 API <br>
+• 구현 : 📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L42) <br>
+3. 관심 팝업리스트 불러오는 API <br>
+• 역할 : 사용자가 저장한 관심 팝업리스트를 전부 불러오는 API  <br>
+• 구현 : 📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L23) <br>
+4. 추가한 팝업스토어인지 확인하는 API <br>
+• 역할 : 현재 날짜 기준 팝업스토어의 end_date가 5일 이하로 남은 팝업스토어 리스트를 불러오는 API <br>
+• 구현 : 📌[코드 보러가기](https://github.com/KIMYOUNGWOON/POP.SPOT/blob/main/server/services/popupListService.js#L23) <br>
 
 
 
