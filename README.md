@@ -1,4 +1,4 @@
-![스크린샷 2023-12-11 오후 9 00 09](https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/a58e5c5e-ca1b-4aea-bbeb-fb3805dfad9c)# 📍 POP.SPOT (팝업스토어 정보와 사전예약, 웨이팅 시스템이 하나로)
+# 📍 POP.SPOT (팝업스토어 정보와 사전예약, 웨이팅 시스템이 하나로)
 
 <br>
 엘리스 SW 엔지니어 6기 2차 프로젝트<br>
