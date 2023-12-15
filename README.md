@@ -317,8 +317,8 @@
 
 <br>
 
-<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/af2079aa-2120-4298-a991-5b95d0127542" width="600">
-<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/4ee9f29e-b591-42a2-9e96-2bd2d64964d2">
+<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/af2079aa-2120-4298-a991-5b95d0127542" width="600"> <img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/4ee9f29e-b591-42a2-9e96-2bd2d64964d2" width="200">
+
 
 
 <br>
