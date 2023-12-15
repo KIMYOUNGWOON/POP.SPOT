@@ -313,6 +313,8 @@
 
 ## 5. 반응형 
 
+<img src="https://github.com/KIMYOUNGWOON/POP.SPOT/assets/126956430/af2079aa-2120-4298-a991-5b95d0127542" width="600">
+
 
 
 
