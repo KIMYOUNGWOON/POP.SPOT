@@ -31,7 +31,7 @@ export default function Header() {
             <div
               className="myPageText"
               onClick={() => {
-                router.push("/mypage");
+                router.push("/myPage");
                 window.scrollTo(0, 0);
                 setInfoModal(false);
               }}
@@ -120,7 +120,7 @@ export default function Header() {
           <div
             className="myBtn"
             onClick={() => {
-              router.push("/mypage");
+              router.push("/myPage");
               window.scrollTo(0, 0);
             }}
           >
